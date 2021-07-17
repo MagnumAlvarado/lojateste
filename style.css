@@ -347,7 +347,7 @@
     padding: 0 18px;
 
     .form input[type="text"], .form input[type="email"]{
-      width: 100%;
+      width: 35%;
         box-sizing: border-box;
         margin: 15px 0;
         border-radius: 200px;
@@ -361,7 +361,7 @@
     }
     
     .form input[type="submit"]{
-      width: 80%;
+      width: 35%;
         margin: 20px auto 10px auto;
         display: block;
         background: #83a1da;
