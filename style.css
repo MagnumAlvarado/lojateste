@@ -74,30 +74,14 @@
   }==*/
   
   .form input[type="text"], .form input[type="email"]{
-    width: 50%;
+    width: 10%;
       box-sizing: border-box;
       margin: 15px 0;
-      border-radius: 200px;
       border: 0;
       padding: 12px 15px;
       box-shadow: inset 0px 1px 4px rgb(0 0 0 / 75%);
   }
   
-  .form label{
-    color: #340e4f;
-  }
-  
-  .form input[type="submit"]{
-    width: 55%;
-      margin: 20px auto 10px auto;
-      display: block;
-      background: #340e4f;
-      border: none;
-      padding: 10px 0;
-      border-radius: 200px;
-      color: #fff;
-      cursor: pointer;
-
   /*===.button:hover {
     background: var(--base-color-alt);
   }*=====/
