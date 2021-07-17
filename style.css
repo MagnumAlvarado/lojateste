@@ -82,6 +82,20 @@
       box-shadow: inset 0px 1px 4px rgb(0 0 0 / 75%);
   }
   
+  .form label{
+    color: #0f43a3;
+  }
+  
+  .form input[type="submit"]{
+    width: 80%;
+      margin: 20px auto 10px auto;
+      display: block;
+      background: #0b49bd;
+      border: none;
+      padding: 10px 0;
+      color: #fff;
+      cursor: pointer;
+      
   /*===.button:hover {
     background: var(--base-color-alt);
   }*=====/
