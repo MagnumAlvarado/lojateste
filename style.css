@@ -1,7 +1,7 @@
 /*====  RESET ============================ */
 * {
     margin: 0;
-    padding: 0;
+    padding: 4px;
     box-sizing: border-box;
   }
   
@@ -18,7 +18,7 @@
     height: auto;
   }
   
-  /*====  VARIABLES ============================ */
+  /*====  VARIABLES ========= */
   :root {
     --header-height: 4.5rem;
   
@@ -59,10 +59,12 @@
     -webkit-font-smoothing: auto;
   }
   
+
+  /*===== Inputs =====*/
   .button {
     background-color: var(--base-color);
     color: var(--text-color-light);
-    height: 3.5rem;
+    height: 4rem;
     display: inline-flex;
     align-items: center;
     padding: 0 2rem;
@@ -71,6 +73,31 @@
     transition: background 0.3s;
   }
   
+  .form input[type="text"], .form input[type="email"]{
+    width: 100%;
+      box-sizing: border-box;
+      margin: 15px 0;
+      border-radius: 200px;
+      border: 0;
+      padding: 12px 15px;
+      box-shadow: inset 0px 1px 4px rgb(0 0 0 / 75%);
+  }
+  
+  .form label{
+    color: #340e4f;
+  }
+  
+  .form input[type="submit"]{
+    width: 80%;
+      margin: 20px auto 10px auto;
+      display: block;
+      background: #340e4f;
+      border: none;
+      padding: 10px 0;
+      border-radius: 200px;
+      color: #fff;
+      cursor: pointer;
+
   .button:hover {
     background: var(--base-color-alt);
   }
