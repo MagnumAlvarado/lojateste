@@ -40,13 +40,24 @@
          </div>
 		</nav>
 
-		 <div class="container">
+		<div id="content">
+			<form action="ACTION" method="POST" class="form" id="form">
+				<label>Cadastre seu e-mail para receber promoções.</label>
+				<input type="text" name="nome" placeholder="Nome" id="nome" required>
+				<input type="email" name="email" class="input" placeholder="E-mail" id="email" required value>
+				<input type="submit" name="submit" value="ENVIAR">
+				<div id="msgemail"></div>
+			</form>
+		</div>
+		
+		 <!---<div class="container">
 		 <strong><p id="mudamensagem">Cadastre seu email para receber as promoções </p></strong>
        	<form>
 		<input type="text" id="email" placeholder="Email"><br>
 		<button id="btnRegistrar">Registrar</button>
 		</form>
-	</div>
+	</div>---->
+
 <main>
 	<section>
 		<div class="container">
@@ -68,8 +79,7 @@
           </div>
         </div>
 	</section>
-	<script src="main.js">
-	</script>
+	<script src="main.js"></script>
 </main>
 </body>
 </html>
