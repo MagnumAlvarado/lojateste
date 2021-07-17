@@ -61,7 +61,7 @@
   
 
   /*===== Inputs =====*/
-  .button {
+    /*=.button {
     background-color: var(--base-color);
     color: var(--text-color-light);
     height: 4rem;
@@ -71,7 +71,7 @@
     border-radius: 0.25rem;
     font: 500 1rem var(--body-font);
     transition: background 0.3s;
-  }
+  }==*/
   
   .form input[type="text"], .form input[type="email"]{
     width: 100%;
@@ -98,9 +98,9 @@
       color: #fff;
       cursor: pointer;
 
-  .button:hover {
+  /*===.button:hover {
     background: var(--base-color-alt);
-  }
+  }*=====/
   
   .divider-1 {
     height: 1px;
@@ -120,11 +120,11 @@
     );
   }
   
-  /*====  LAYOUT ============================ */
-  .container {
+  /*====  LAYOUT ======= */
+  /*==.container {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-  }
+  }= */
   
   .grid {
     display: grid;
