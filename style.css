@@ -332,6 +332,20 @@
     margin-bottom: 2rem;
   }
   
+/*====  INPUT ==== */
+  .section2{
+    max-width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .section2 div{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 18px;
+
   /*====  ABOUT ============================ */
   #about {
     background: white;
