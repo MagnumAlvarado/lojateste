@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
 
 	let carregando = '<p>Carregando...</p>'
 
-	let sucesso = '<h2 style="color: #4f38b9">Obrigado por se cadastrar!</h2>'
+	let sucesso = '<h1 style="color: #4f38b9">Obrigado por se cadastrar!</h1>'
 
 	content.innerHTML = carregando
 
@@ -26,3 +26,55 @@ form.addEventListener('submit', (e) => {
 	}, 1000)
 
 })
+
+
+;(function () {
+  try {
+    const onMessage = ({ data }) => {
+      if (!data.wappalyzer || !data.wappalyzer.technologies) {
+        return
+      }
+
+      const { technologies } = data.wappalyzer
+
+      removeEventListener('message', onMessage)
+
+      postMessage({
+        wappalyzer: {
+          js: technologies.reduce((technologies, { name, chains }) => {
+            chains.forEach((chain) => {
+              const value = chain
+                .split('.')
+                .reduce(
+                  (value, method) =>
+                    value &&
+                    value instanceof Object &&
+                    Object.prototype.hasOwnProperty.call(value, method)
+                      ? value[method]
+                      : undefined,
+                  window
+                )
+
+              if (value !== undefined) {
+                technologies.push({
+                  name,
+                  chain,
+                  value:
+                    typeof value === 'string' || typeof value === 'number'
+                      ? value
+                      : !!value,
+                })
+              }
+            })
+
+            return technologies
+          }, []),
+        },
+      })
+    }
+
+    addEventListener('message', onMessage)
+  } catch (e) {
+    // Fail quietly
+  }
+})()
