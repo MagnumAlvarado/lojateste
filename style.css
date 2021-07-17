@@ -90,65 +90,13 @@
     width: 10%;
       margin: 20px auto 10px auto;
       display: block;
+      align-items: center;
       background: #0b49bd;
       border: none;
       padding: 10px 0;
       color: #fff;
       cursor: pointer;
-      
-  /*===.button:hover {
-    background: var(--base-color-alt);
-  }*=====/
-  
-  .divider-1 {
-    height: 1px;
-    background: linear-gradient(
-      270deg,
-      hsla(var(--hue), 36%, 57%, 1),
-      hsla(var(--hue), 65%, 88%, 0.34)
-    );
-  }
-  
-  .divider-2 {
-    height: 1px;
-    background: linear-gradient(
-      270deg,
-      hsla(var(--hue), 65%, 88%, 0.34),
-      hsla(var(--hue), 36%, 57%, 1)
-    );
-  }
-  
-  /*====  LAYOUT ======= */
-  /*==.container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }= */
-  
-  /*== .grid {
-    display: grid;
-    gap: 2rem;
-  }= */
-  
-  /*=.section {
-    padding: calc(5rem + var(--header-height)) 0;
-  }= */
-  
-  /*.section .title {
-    margin-bottom: 1rem;
-  }=*/
-  
- /* .section .subtitle {
-    font-size: var(--subtitle-font-size);
-  }=*/
-  
-  /*.section header {
-    margin-bottom: 4rem;
-  }*/
-  
-  .section header strong {
-    color: var(--base-color);
-  }
-  
+    
   #header {
     border-bottom: 1px solid #e4e4e4;
     margin-bottom: 2rem;
@@ -166,6 +114,10 @@
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
   }
   
+  .section header strong {
+    color: var(--base-color);
+  }
+  
   /*====  LOGO ============================ */
   .logo {
     font: 700 1.31rem var(--title-font);
@@ -180,7 +132,7 @@
     color: var(--body-color);
   }
   
-  /*====  NAVIGATION ============================ */
+  /*====  NAVIGATION =======*/
   nav {
     height: var(--header-height);
     display: flex;
@@ -371,7 +323,7 @@
 
  
 
-  /*====  FOOTER ============================ */
+  /*====  FOOTER 
   footer {
     background: var(--base-color);
   }
@@ -408,8 +360,9 @@
   footer .social a:hover {
     transform: translateY(-8px);
   }
+  ==========*/
   
-  /* Back to top */
+  /* Back to top 
   .back-to-top {
     background: var(--base-color);
     color: var(--text-color-light);
@@ -436,6 +389,7 @@
     opacity: 1;
     transform: translateY(0);
   }
+  */
   
   /*========= MEDIA QUERIES =========*/
   /* extra large devices: 1200 > */
@@ -517,23 +471,7 @@
       grid-auto-flow: column;
     }
   
-    /* services */
-    .cards {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  
-    .card {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-  
-    /* testimonials */
-    #testimonials .container {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    /* contact */
+     /* contact */
     #contact .container {
       grid-auto-flow: column;
       align-items: center;
