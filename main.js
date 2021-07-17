@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
 
 	let carregando = '<p>Carregando...</p>'
 
-	let sucesso = '<h1 style="color: #4f38b9">Obrigado por se cadastrar!</h1>'
+	let sucesso = '<div style="color: #4f38b9">Obrigado por se cadastrar!</div>'
 
 	content.innerHTML = carregando
 
