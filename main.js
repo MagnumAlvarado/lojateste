@@ -1,5 +1,15 @@
+function salvarEmail(){
+  var textEmail = document.getElementById("email");
+  var email = textEmail.value;
+
+  localStorage.setItem("email",email);
+
+  alert("Tudo pronto para você ficar por dentro das melhores ofertas")
+}
+
+
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
-const scrollReveal = ScrollReveal({
+/*const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
     duration: 700,
@@ -20,11 +30,3 @@ const scrollReveal = ScrollReveal({
   var btnRegistar = document.getElementById("btnRegistrar")
 btnRegistar.onclick = salvarEmail;
 
-function salvarEmail(){
-    var textEmail = document.getElementById("email");
-    var email = textEmail.value;
-
-    localStorage.setItem("email",email);
-
-    alert("Tudo pronto para você ficar por dentro das melhores ofertas")
-}
