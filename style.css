@@ -41,7 +41,7 @@
     --body-font: 'DM Sans', sans-serif;
   }
   
-  /*===  BASE ============================ */
+  /*===  BASE ===*/
   html {
     scroll-behavior: smooth;
   }
@@ -84,10 +84,10 @@
   
   .form label{
     color: #0f43a3;
-  }
+      }
   
   .form input[type="submit"]{
-    width: 80%;
+    width: 10%;
       margin: 20px auto 10px auto;
       display: block;
       background: #0b49bd;
